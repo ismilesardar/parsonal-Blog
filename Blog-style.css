@@ -1,0 +1,550 @@
+/* reset code and common cod start here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* font-family: 'Italianno', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+.text-jestfi{
+    text-align: justify;
+}
+.text-wight{
+    color: white;
+}
+.section-head{
+    font-size: 9rem;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+}
+.section-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+
+.common-btn{
+    background-color: rgb(243, 124, 20);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 10px;
+}
+
+.div-clear{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* reset code and common cod End here */
+
+/* header degin start here */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 1rem 1rem;
+
+    position: sticky;
+    top: 0;
+    min-height: 5vh;
+    z-index: 289;
+}
+
+.strong-h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-right: 5px;
+    margin-left: 0;
+}
+
+.logo-figure{
+    border: 2px solid white;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.logo{
+    font-size: 4rem;
+    padding: 5px ;
+}
+
+#menu-icon{
+    display: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li:hover{
+    background-color: #8483866e;
+    border-radius: 5px;
+}
+.nav-link{
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
+/* header degin End here */
+
+/* baner-section start here */
+.background{
+    background-image: url(media-B/design1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#block-baner-section{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    margin-bottom: 0;
+}
+#block-baner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+    color: white;
+}      
+#block-baner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+}      
+.banner-photo{
+    width: 45rem;
+    height: 35rem;
+    border: .4rem solid;
+}
+.banner-h1{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.479);
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.bnner-dec{
+    font-size: 1.5rem;
+}
+
+/* baner-section end here */
+
+/* block-about start here */
+#blog-about{
+  
+    background-color: #4c4c4c;
+    scroll-behavior: smooth;
+    
+}
+.card-container{
+    display: flex;
+    align-items: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    padding: 3rem 1rem;
+    background-color: #a09d9d;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s; 
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-hea{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.card-dec{
+    font-size: 1.6rem;
+    padding: 0.4rem 0;
+    text-align: justify;
+    margin-bottom: 4rem;
+}
+.card-btn{
+    align-self: center;
+    width: 70%;
+}
+
+
+/* block-about End here */
+
+/* Archives section start here  */
+#archives{
+    scroll-behavior: smooth;
+    background-image: radial-gradient(circle,black,red,rgb(94, 91, 91),rgb(0, 0, 0))
+}
+.archives-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.2rem solid;
+    /* border-bottom: 0.2rem solid; */
+}
+.archives-container2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.2rem dotted;
+     /* border-bottom: 0.2rem solid; */
+}
+.archives-container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.2rem dotted;
+    border-bottom: 0.2rem solid;
+}
+.archives-container-lists{
+    display: flex;
+    text-align: center;
+}
+.archives-container-list{
+    margin: 1rem;
+}
+.archives-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.6rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.archives-img:hover{
+    transform: scale(1.1);
+}
+/* Archives section End here  */
+
+
+/* blog-post start here */
+
+
+#blog-post{
+    background-color: #3f3e3e;
+    
+}
+
+.bloge-header{
+    margin-bottom: 3rem;
+    color: white;
+    border-bottom: 0.5rem dotted rgb(243, 232, 232);
+    
+}
+
+.blog-post{
+display: flex;
+width: 85%;
+margin-bottom: 4rem;
+box-shadow: 0.1rem 0.1rem 0.1rem #222,-0.1rem 0 0.1rem #222;
+transition: .3s;
+border: 0.3rem solid ;
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.671);
+}
+
+.blog-post:hover{
+    box-shadow: 0.5rem 0.5rem 0.9rem wheat, -0.5rem 0 0.9rem wheat;
+}
+.blog-post-img{
+    height: 100%;
+    width: 100%;
+}
+.blog-post-aside{
+    flex: 1;
+}
+.blog-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+.blog-heading{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-sub-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.blog-dec{
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+.blog-button {
+    width: 40%;
+}
+.blog-button:hover{
+    background-color: #0c0e0cde;
+    color: white;
+}
+/* blog-post end here */
+
+/* contac section start here */
+#contact-section{
+    /* background-color: #4c4c4c; */
+    background-image: radial-gradient(circle,rgb(94, 91, 91),rgb(0, 0, 0))
+}
+#contact-form{
+    box-shadow: 0.1rem 0.1rem 0.1rem #222,-0.1rem 0 0.1rem #222;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.from-contrils{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.from-contrils label{
+    font-size: 1.7rem;
+    flex: 0.3;
+}
+input,textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+}
+textarea{
+    resize: none;
+    height: 15vh;
+}
+.btn-sub{
+    display: flex;
+    justify-content: flex-end;
+}
+.cont-btn{
+    width: 30%;
+}
+.cont-btn:hover{
+    background-color: black;
+    color: wheat;
+}
+/* cont section ends here */
+
+/* footer start here */
+
+#footer-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.footer-dec{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 2rem;
+    color: white;
+    /* flex: 0.4; */
+}
+.airo-up-icin{
+    /* flex: 0.2; */
+    margin-top: 1rem;
+    text-align: center;
+}
+.socil-media-icon{
+    /* flex: 0.4; */
+    text-align: right;
+    margin-top: 2rem;
+}
+.icon-arrow{
+    font-size: 5rem;
+    cursor: pointer;
+    margin: 1.5rem;
+}
+.icon-arrow:hover{
+    color: rgba(255, 255, 255, 0.438);
+}
+
+/* footer end here */
+
+/* responsive stsrt here */
+@media (max-width:992px) {
+    
+    #block-baner-section{
+        flex-direction: column;
+
+    }
+    #block-baner-section article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .card-container{
+        width: 50%;
+       
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+}
+@media (max-width:768px) {
+   
+    #block-baner-section article{
+        width: 80%;
+    }
+    .card-container{
+        width: 80%;
+    
+    }
+    #archives{
+        min-height: auto;
+    }
+    .blog-post{
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+    .blog-button {
+        width: 40%;
+    }
+    #contact-section{
+       min-height: auto;
+    }
+    #footer-section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .socil-media-icon{
+        text-align: center;
+
+    }
+}
+@media (max-width:600px) {
+    
+    header{
+       flex-direction: column;   
+       text-align: center;
+    }
+    nav ul{
+        padding-left: 2rem;
+    }
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+    }
+    #menu-icon{
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+    .hedden{
+        display: none;
+    }
+
+
+    #block-baner-section{
+        min-height: auto;
+    }
+    #block-baner-section article{
+        width: 90%;
+    }
+    .card-container{
+        width: 90%;
+    
+    }
+    .banner-photo{
+        max-width: 100%;
+    }
+    #blog-about{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .archives-container-lists{
+        flex-wrap: wrap;
+    }
+    .blog-post{
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+    .blog-button {
+        width: 50%;
+    }
+
+    #contact-form{
+        width: 90%;
+    }
+    .from-contrils{
+        flex-direction: column;
+    }
+    .from-contrils label{
+        margin-bottom: 1rem;
+    }
+    #footer-section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .socil-media-icon{
+        text-align: center;
+
+    }
+
+}
+@media (max-width:400px) {
+    .card-container{
+        width: 100%;
+    
+    }
+}
+
+/* responsive End here */
+
